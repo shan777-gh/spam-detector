@@ -1,55 +1,53 @@
-# 📧 Spam Detection Using Machine Learning
+📩 Spam Message Classifier (ML Project)
+This project detects whether a given SMS message is spam or ham (not spam) using Machine Learning. We use Natural Language Processing (NLP) techniques to process the text and train classifiers like Naive Bayes and Random Forest.
 
-This project builds a spam detection system that classifies text messages (SMS) as either **spam** or **ham** (not spam) using a machine learning model trained on the SMS Spam Collection Dataset.
+🚀 Features
+-Cleaned and labeled SMS dataset
 
----
+-Text preprocessing using TF-IDF
 
-## 📌 Project Highlights
+-Trained on Naive Bayes and Random Forest
 
-- End-to-end pipeline from data loading to model evaluation
-- Text preprocessing using TF-IDF vectorization
-- Classification using Multinomial Naive Bayes
-- Achieved ~96.9% accuracy
-- Includes confusion matrix and classification report
+-Evaluation via confusion matrix, accuracy, precision, recall, and F1-score
 
----
+-Excellent spam detection performance (F1 > 90%)
 
-## 🧠 Tech Stack
+🛠️ Technologies Used
+-Python
 
-- **Python**
-- **Pandas** & **NumPy**
-- **scikit-learn**
-- **Matplotlib** & **Seaborn**
+-pandas, numpy
 
----
+-scikit-learn
 
-## 📂 Dataset
+-matplotlib, seaborn
 
-- Dataset: [SMS Spam Collection](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
-- Contains 5,574 labeled SMS messages
-- Two classes: `ham` (legitimate) and `spam` (unwanted)
+📊 Model Results (Naive Bayes)
+-Accuracy: 0.968609865470852
 
----
+-Classification Report:
+               precision    recall  f1-score   support
 
-## 📈 Model Performance
+           0       0.96      1.00      0.98       965
+           1       1.00      0.77      0.87       150
 
-| Metric        | Ham       | Spam      |
-|---------------|-----------|-----------|
-| Precision     | 96%       | 100%      |
-| Recall        | 100%      | 77%       |
-| F1-Score      | 98%       | 87%       |
-| **Accuracy**  | **96.9%** |           |
+    accuracy                           0.97      1115
+   macro avg       0.98      0.88      0.93      1115
+weighted avg       0.97      0.97      0.97      1115
+![download](https://github.com/user-attachments/assets/b92145ab-99bb-4878-99da-c8509b9bcdc3)
 
----
+📊 Model Results (Random Forest)
+-Random Forest Accuracy: 0.9775784753363229
 
-## 🛠️ How to Run
+-Classification Report:
+               precision    recall  f1-score   support
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/spam-detector.git
-   cd spam-detector
-2. Install dependencies:
-   pip install -r requirements.txt
-   
-3. Run the Jupyter Notebook:
-   jupyter notebook spam_detection.ipynb
+           0       0.97      1.00      0.99       965
+           1       1.00      0.83      0.91       150
+
+    accuracy                           0.98      1115
+   macro avg       0.99      0.92      0.95      1115
+weighted avg       0.98      0.98      0.98      1115
+
+![download](https://github.com/user-attachments/assets/d4b52510-e911-43cc-a604-6128a2d36782)
+
+
